@@ -19,3 +19,5 @@ public class Product {
 
     private Integer price_in_cents;
 }
+
+
