@@ -1,6 +1,7 @@
 package com.example.crud.controllers;
 
 import com.example.crud.domain.product.ProductRepository;
+import com.example.crud.domain.product.RequestProduct;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,7 @@ public class ProductController {
 
     @PostMapping
     public ResponseEntity registerProduct(@RequestBody @Valid RequestProduct data){
-
+        System.out.println(data);
+        return ResponseEntity.ok().build();
     }
 }
